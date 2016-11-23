@@ -8,8 +8,8 @@ import { DataService } from './services/data.service';
     
   `],
   template: `
-    <!-- <property-binding-component [result]=1000></property-binding-component> -->
-    <!-- <directives-component [value]="100"></directives-component> -->
+    <property-binding-component [result]=1000></property-binding-component>
+    <directives-component [value]="100"></directives-component>
     <service-one-component></service-one-component>
     <service-two-component></service-two-component>
   `,
