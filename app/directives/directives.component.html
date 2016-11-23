@@ -1,0 +1,25 @@
+<h1>Attribute Directive</h1>
+<p highlight-one>Highlight 1</p>
+<p highlight-two>Highlight 2</p>
+<p highlight-three 
+	[highlightColor]="'blue'" 
+	[defaultColor]="'yellow'">Highlight 3</p>
+<hr>
+
+<h1>Structrual Directive</h1>
+<h2>*ngIf</h2>
+<p *ngIf="switch"> *ngIf Context => TRUE </p>
+<p *ngIf="!switch"> *ngIf Context => FALSE </p>
+<button class="btn btn-success" (click)="onSwitch()">Switch</button>
+
+<h2>*ngFor</h2>
+<ul *ngFor="let item of items; let i=index " >
+	<li> {{ item }} --> (index: {{ i }})</li>
+</ul>
+
+<h2>ngSwitch</h2>
+<div [ngSwitch]="value">
+	<p *ngSwitchCase="100">This is 100</p>
+	<p *ngSwitchCase="10">This is 10</p>
+	<p *ngSwitchDefault>This is Default</p>
+</div>

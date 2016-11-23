@@ -1,0 +1,14 @@
+<h1>Property Binding</h1>
+<p class="greenTextColor redBorder">This is proprety binding.</p>
+<p [ngClass]="{ greenTextColor: true, redBorder: false }">Thi is ngClass binding</p>
+<p style="color: blue" >This is style proerty binding</p>
+<p [ngStyle]="{ color: color }">This is ngStyle property binding.</p>
+<p>{{ result }}</p>
+
+<hr>
+<h1>Event Binding</h1>
+<event-binding-component (clicked)="bindClick($event)"></event-binding-component>
+
+<hr>
+<h1>Two Way Binding</h1>
+<two-way-binding-component></two-way-binding-component>

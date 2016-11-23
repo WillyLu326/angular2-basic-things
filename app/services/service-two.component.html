@@ -1,0 +1,13 @@
+<hr>
+<input type="text" class="form-control" #input><br>
+<button class="btn btn-primary" (click)="onLog(input.value)">Log</button>
+<button class="btn btn-info" (click)="onStore()">Store</button>
+
+<br><br>
+<button class="btn btn-danger">Refresh Storage</button>
+<h3>Storage</h3>
+<ul>
+	<li *ngFor=" let item of data "> {{ item }} </li>
+</ul>
+<h3>Recived Value</h3>
+<p>{{ value }}</p>

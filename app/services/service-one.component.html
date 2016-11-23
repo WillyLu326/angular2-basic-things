@@ -1,0 +1,13 @@
+<h1>Services</h1>
+<hr>
+
+<input type="text" class="form-control" #input> <br>
+<button class="btn btn-primary" (click)="onLog(input.value)">Log</button>
+<button class="btn btn-info" (click)="onStore(input.value)">Store</button>
+<button class="btn btn-success" (click)="onSend(input.value)">Send</button>
+<br><br>
+<button class="btn btn-danger" (click)="onRefresh()">Refresh Storage</button>
+<h3>Storage</h3>
+<ul>
+	<li *ngFor=" let item of data ">{{ item }}</li>
+</ul>
